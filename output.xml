@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-05-22T03:29:23.594798" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\Users\Admin\PycharmProjects\PythonProject9\TestCases\TC1.robot">
+<test id="s1-t1" name="LoginTest" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-22T03:29:24.647517" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/login?returnUrl=%2F'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-22T03:29:24.646477" elapsed="2.565448"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-22T03:29:27.213787" elapsed="0.318383"/>
+</kw>
+<kw name="Login To Application">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=Email</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-22T03:29:27.535515" elapsed="0.379729"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-22T03:29:27.917380" level="INFO">Typing text 'msmadhusmitasahoo2003@gmail.com' into text field 'id=Email'.</msg>
+<arg>id=Email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-22T03:29:27.915701" elapsed="0.211322"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-22T03:29:28.128610" level="INFO">Typing text '@Madhu2003' into text field 'id=Password'.</msg>
+<arg>id=Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-22T03:29:28.127393" elapsed="0.201818"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-22T03:29:28.330420" level="INFO">Clicking element 'xpath=//button[text()='Log in']'.</msg>
+<arg>xpath=//button[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-22T03:29:28.329803" elapsed="0.311252"/>
+</kw>
+<status status="PASS" start="2026-05-22T03:29:27.534349" elapsed="1.107363"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-22T03:29:28.643427" elapsed="2.479166"/>
+</kw>
+<status status="PASS" start="2026-05-22T03:29:24.642866" elapsed="6.480937"/>
+</test>
+<status status="PASS" start="2026-05-22T03:29:23.600367" elapsed="7.530679"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC1" id="s1" pass="1" fail="0" skip="0">TC1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-05-22T03:29:23.582404" level="WARN">Error in file 'C:\Users\Admin\PycharmProjects\PythonProject9\TestCases\TC1.robot' on line 9: Singular section headers like '*** Test Case ***' are deprecated. Use plural format like '*** Test Cases ***' instead.</msg>
+</errors>
+</robot>
