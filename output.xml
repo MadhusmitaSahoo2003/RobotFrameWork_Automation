@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-05-22T03:29:23.594798" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-05-22T19:23:21.349622" rpa="false" schemaversion="5">
 <suite id="s1" name="TC1" source="C:\Users\Admin\PycharmProjects\PythonProject9\TestCases\TC1.robot">
 <test id="s1-t1" name="LoginTest" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-05-22T03:29:24.647517" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/login?returnUrl=%2F'.</msg>
+<msg time="2026-05-22T19:23:21.702013" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/login?returnUrl=%2F'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-05-22T03:29:24.646477" elapsed="2.565448"/>
+<status status="PASS" start="2026-05-22T19:23:21.701668" elapsed="1.286834"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-05-22T03:29:27.213787" elapsed="0.318383"/>
+<status status="PASS" start="2026-05-22T19:23:22.991255" elapsed="0.229402"/>
 </kw>
 <kw name="Login To Application">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=Email</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-22T03:29:27.535515" elapsed="0.379729"/>
+<status status="PASS" start="2026-05-22T19:23:23.231285" elapsed="0.329767"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-22T03:29:27.917380" level="INFO">Typing text 'msmadhusmitasahoo2003@gmail.com' into text field 'id=Email'.</msg>
+<msg time="2026-05-22T19:23:23.561656" level="INFO">Typing text 'msmadhusmitasahoo2003@gmail.com' into text field 'id=Email'.</msg>
 <arg>id=Email</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-22T03:29:27.915701" elapsed="0.211322"/>
+<status status="PASS" start="2026-05-22T19:23:23.561259" elapsed="0.101790"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-22T03:29:28.128610" level="INFO">Typing text '@Madhu2003' into text field 'id=Password'.</msg>
+<msg time="2026-05-22T19:23:23.663736" level="INFO">Typing text '@Madhu2003' into text field 'id=Password'.</msg>
 <arg>id=Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-22T03:29:28.127393" elapsed="0.201818"/>
+<status status="PASS" start="2026-05-22T19:23:23.663359" elapsed="0.083532"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-22T03:29:28.330420" level="INFO">Clicking element 'xpath=//button[text()='Log in']'.</msg>
+<msg time="2026-05-22T19:23:23.747309" level="INFO">Clicking element 'xpath=//button[text()='Log in']'.</msg>
 <arg>xpath=//button[text()='Log in']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-22T03:29:28.329803" elapsed="0.311252"/>
+<status status="PASS" start="2026-05-22T19:23:23.747068" elapsed="0.134563"/>
 </kw>
-<status status="PASS" start="2026-05-22T03:29:27.534349" elapsed="1.107363"/>
+<status status="PASS" start="2026-05-22T19:23:23.227243" elapsed="0.654592"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-05-22T03:29:28.643427" elapsed="2.479166"/>
+<status status="PASS" start="2026-05-22T19:23:23.882346" elapsed="2.229840"/>
 </kw>
-<status status="PASS" start="2026-05-22T03:29:24.642866" elapsed="6.480937"/>
+<status status="PASS" start="2026-05-22T19:23:21.700688" elapsed="4.412765"/>
 </test>
-<status status="PASS" start="2026-05-22T03:29:23.600367" elapsed="7.530679"/>
+<status status="PASS" start="2026-05-22T19:23:21.351268" elapsed="4.765137"/>
 </suite>
 <statistics>
 <total>
@@ -61,6 +61,6 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2026-05-22T03:29:23.582404" level="WARN">Error in file 'C:\Users\Admin\PycharmProjects\PythonProject9\TestCases\TC1.robot' on line 9: Singular section headers like '*** Test Case ***' are deprecated. Use plural format like '*** Test Cases ***' instead.</msg>
+<msg time="2026-05-22T19:23:21.345207" level="WARN">Error in file 'C:\Users\Admin\PycharmProjects\PythonProject9\TestCases\TC1.robot' on line 9: Singular section headers like '*** Test Case ***' are deprecated. Use plural format like '*** Test Cases ***' instead.</msg>
 </errors>
 </robot>
