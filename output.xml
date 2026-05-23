@@ -1,66 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-05-22T19:23:21.349622" rpa="false" schemaversion="5">
-<suite id="s1" name="TC1" source="C:\Users\Admin\PycharmProjects\PythonProject9\TestCases\TC1.robot">
-<test id="s1-t1" name="LoginTest" line="10">
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-05-23T01:01:09.631820" rpa="false" schemaversion="5">
+<suite id="s1" name="Speedtest" source="C:\Users\Admin\PycharmProjects\PythonProject9\TestCases\speedtest.robot">
+<test id="s1-t1" name="regtest" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-05-22T19:23:21.702013" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/login?returnUrl=%2F'.</msg>
+<msg time="2026-05-23T01:01:10.667720" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-05-22T19:23:21.701668" elapsed="1.286834"/>
+<status status="PASS" start="2026-05-23T01:01:10.666642" elapsed="4.300730"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-05-22T19:23:22.991255" elapsed="0.229402"/>
+<status status="PASS" start="2026-05-23T01:01:14.968292" elapsed="0.084430"/>
 </kw>
-<kw name="Login To Application">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id=Email</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-22T19:23:23.231285" elapsed="0.329767"/>
+<kw name="Get Selenium Timeout" owner="SeleniumLibrary">
+<msg time="2026-05-23T01:01:15.054651" level="INFO">${time} = 5 seconds</msg>
+<var>${time}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-05-23T01:01:15.053931" elapsed="0.000877"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-05-23T01:01:15.055649" elapsed="0.001704"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-05-23T01:01:15.057927" elapsed="0.002755"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2026-05-23T01:01:25.353557" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-23T01:01:25.354057" level="FAIL">Text 'Registeration' did not appear in 10 seconds.</msg>
+<arg>Registeration</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2026-05-23T01:01:15.061397" elapsed="10.297826">Text 'Registeration' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<arg>Gender</arg>
+<arg>F</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" start="2026-05-23T01:01:25.359931" elapsed="0.000097"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-22T19:23:23.561656" level="INFO">Typing text 'msmadhusmitasahoo2003@gmail.com' into text field 'id=Email'.</msg>
-<arg>id=Email</arg>
-<arg>${email}</arg>
+<arg>id=FirstName</arg>
+<arg>Madhusmita</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-22T19:23:23.561259" elapsed="0.101790"/>
+<status status="NOT RUN" start="2026-05-23T01:01:25.360508" elapsed="0.000088"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-22T19:23:23.663736" level="INFO">Typing text '@Madhu2003' into text field 'id=Password'.</msg>
+<arg>id=LastName</arg>
+<arg>Sahoo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-23T01:01:25.361078" elapsed="0.000087"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=Email</arg>
+<arg>msmadhusmitasahoo2003@gamil.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-23T01:01:25.362169" elapsed="0.000095"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
 <arg>id=Password</arg>
-<arg>${password}</arg>
+<arg>@Madhu2003</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-22T19:23:23.663359" elapsed="0.083532"/>
+<status status="NOT RUN" start="2026-05-23T01:01:25.362728" elapsed="0.000087"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-22T19:23:23.747309" level="INFO">Clicking element 'xpath=//button[text()='Log in']'.</msg>
-<arg>xpath=//button[text()='Log in']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-22T19:23:23.747068" elapsed="0.134563"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=ConfirmPassword</arg>
+<arg>@Madhu2003</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-23T01:01:25.363268" elapsed="0.000090"/>
 </kw>
-<status status="PASS" start="2026-05-22T19:23:23.227243" elapsed="0.654592"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-05-22T19:23:23.882346" elapsed="2.229840"/>
-</kw>
-<status status="PASS" start="2026-05-22T19:23:21.700688" elapsed="4.412765"/>
+<status status="FAIL" start="2026-05-23T01:01:10.663047" elapsed="14.700902">Text 'Registeration' did not appear in 10 seconds.</status>
 </test>
-<status status="PASS" start="2026-05-22T19:23:21.351268" elapsed="4.765137"/>
+<status status="FAIL" start="2026-05-23T01:01:09.638497" elapsed="15.727825"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="TC1" id="s1" pass="1" fail="0" skip="0">TC1</stat>
+<stat name="Speedtest" id="s1" pass="0" fail="1" skip="0">Speedtest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-05-22T19:23:21.345207" level="WARN">Error in file 'C:\Users\Admin\PycharmProjects\PythonProject9\TestCases\TC1.robot' on line 9: Singular section headers like '*** Test Case ***' are deprecated. Use plural format like '*** Test Cases ***' instead.</msg>
 </errors>
 </robot>
